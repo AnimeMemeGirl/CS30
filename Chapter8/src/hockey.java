@@ -1,10 +1,27 @@
 import java.text.NumberFormat;
 import java.util.Scanner;
 
+/*
+
+Program: Hockey.java
+
+Purpose: Test the puck class
+
+Author: Luke Van Hardeveld 
+School: CHHS
+Course: Computer Science 30
+ 
+
+*/
+
 public class hockey 
 {
 
-		
+		/*
+		 
+		 launch the application
+		 
+		 */
 	public static void main(String[] args)
 	{
 		Scanner input = new Scanner(System.in);
@@ -26,6 +43,10 @@ public class hockey
 		String action;
 		int w;
 		double wArg;
+		
+		/*
+		 output
+		 */
 		if(pA.equals(yt))
 		{
 			System.out.println("true");
@@ -35,6 +56,17 @@ public class hockey
 			System.out.println("false");
 		}
 		
+		if(pA.compareTo(yt) == -1)
+		{
+			System.out.println(pA + " Is greater than " + yt);
+		}
+		
 	}
 	
 }
+
+/* Screen Dump
+
+
+
+ */

@@ -1,3 +1,16 @@
+/*
+
+Program: puck.java          
+
+Purpose: Create a puck class that inherits the disk class.
+
+Author: Luke Van Hardeveld 
+School: CHHS
+Course: Computer Science 30
+ 
+
+*/
+
 
 public class puck extends circle
 {
@@ -8,6 +21,10 @@ public class puck extends circle
 	double YthMin = 4;
 	double weight;
 	boolean standard, youth;
+	
+	/*
+	 puck weight constructor
+	 */
 	
 	public puck(double w)
 	{
@@ -29,6 +46,10 @@ public class puck extends circle
 
 	}
 	
+	/*
+	 string constructor for division
+	 */
+	
   public String getDivision()
   {
 	  
@@ -47,11 +68,19 @@ public class puck extends circle
 	  return div;
   }
   
+  /*
+   constructor for returning weight
+   */
+  
   public double getWeight()
   {
 	  return(weight);
   }
 	
+  /*
+   boolean used to return if the weight is true or false
+   */
+  
   public boolean equals(Object p)
   {
 	  
@@ -67,4 +96,34 @@ public class puck extends circle
 	  
   }
   
+  /*
+   checks if the weights are equal
+   */
+  
+  public int compareTo(Object p)
+  {
+	  
+	  puck testPuck = (puck)p;
+	  
+	  if(weight < testPuck.getWeight())
+	  {
+		  return(-1);
+	  }
+	  else if(weight == testPuck.getWeight())
+	  {
+		  return(0);
+	  }
+	  else
+	  {
+		  return(1);
+	  }
+	  
+  }
+  
 }
+
+/* Screen Dump
+
+
+ 
+ */
