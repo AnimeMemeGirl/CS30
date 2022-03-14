@@ -1,5 +1,18 @@
 package Uemployee;
 
+/*
+
+Program: Uemployee.java
+
+Purpose: Create a Uemployee class that contains member variables for the university employee name and salary.
+
+Author: Luke Van Hardeveld 
+School: CHHS
+Course: Computer Science 30
+ 
+
+*/
+
 public abstract class Uemployee 
 {
 
@@ -51,3 +64,9 @@ public abstract class Uemployee
 	}
 	
 }
+
+/* Screen Dump
+
+
+
+ */

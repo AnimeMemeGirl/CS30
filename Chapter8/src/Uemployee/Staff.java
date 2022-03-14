@@ -1,5 +1,18 @@
 package Uemployee;
 
+/*
+
+Program: Staff.java
+
+Purpose: For holding and returning the job title.
+
+Author: Luke Van Hardeveld 
+School: CHHS
+Course: Computer Science 30
+ 
+
+*/
+
 public class Staff extends Uemployee
 {
 
@@ -19,3 +32,9 @@ public class Staff extends Uemployee
 	}
 	
 }
+
+/* Screen Dump
+
+
+
+ */
