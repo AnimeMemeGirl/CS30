@@ -1,5 +1,18 @@
 package Account;
 
+/*
+
+Program: Bank.java          
+
+Purpose:
+
+Author: Luke Van Hardeveld 
+School: CHHS
+Course: Computer Science 30
+ 
+
+*/
+
 import java.text.NumberFormat;
 import java.util.Scanner;
 

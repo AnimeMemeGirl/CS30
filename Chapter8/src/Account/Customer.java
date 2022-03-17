@@ -1,5 +1,18 @@
 package Account;
 
+/*
+
+Program: Customer.java          
+
+Purpose:
+
+Author: Luke Van Hardeveld 
+School: CHHS
+Course: Computer Science 30
+ 
+
+*/
+
 public class Customer 
 {
     private String firstName, lastName, street, city, state, zip;

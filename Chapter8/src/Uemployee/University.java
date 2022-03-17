@@ -1,5 +1,18 @@
 package Uemployee;
 
+/*
+
+Program: University.java          
+
+Purpose: test the Uemployee class
+
+Author: Luke Van Hardeveld 
+School: CHHS
+Course: Computer Science 30
+ 
+
+*/
+
 import java.text.NumberFormat;
 import java.util.Scanner;
 
@@ -46,8 +59,8 @@ public class University
 
 			 
 			
-		        }while(!action.equalsIgnoreCase("Q"));
-		}
+		        }
+		  }while(!action.equalsIgnoreCase("Q"));
 	}
 	
 }
