@@ -19,7 +19,7 @@ import java.text.NumberFormat;
 public class Account 
 {
 
-    private double balance;
+    double balance;
     private Customer cust;
     
     public Account(double bal, String fName, String lName, String str, String city, String st, String zip)
