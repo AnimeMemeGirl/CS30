@@ -4,12 +4,16 @@ public class Car extends Vehicle
 {
 	
 	private double Doors;
+	private String DoorsS;
+	private String Car;
 	
-   public Car(double Fe, double Cc, double Drs)
+   public Car(String c, String Fe, double FeI, String Cc, int CcI, String d, int Drs)
    {
 	   
-    super(Fe, Cc);
+    super(FeI, CcI);
     Doors = Drs;
+    DoorsS = d;
+    Car = c;
    
    }
    

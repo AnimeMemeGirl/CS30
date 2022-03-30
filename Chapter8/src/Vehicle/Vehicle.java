@@ -19,11 +19,11 @@ public abstract class Vehicle
 	private double Feconomy;
 	private double carryCapacity;
 	
-	public Vehicle(double Fe, double Cc)
+	public Vehicle(double FeI, double CcI)
 	{
 		
-		Feconomy = Fe;
-		carryCapacity = Cc;
+		Feconomy = FeI;
+		carryCapacity = CcI;
 		
 	}
 	

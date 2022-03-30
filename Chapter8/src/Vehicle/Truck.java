@@ -4,12 +4,16 @@ public class Truck extends Vehicle
 {
 
 	private double horsePower;
+	private String Truck;
+	private String horsePowerS;
 	
-	   public Truck(double Fe, double Hp, double Cc)
+	   public Truck(String t, String Fe, double FeI, String Hp, int HpI, String Cc, int CcI)
 	   {
 		   
-	   super(Fe, Hp);
-	   horsePower = Hp;
+	   super(FeI, CcI);
+	   horsePower = HpI;
+	   horsePowerS = Hp;
+	   Truck = t;
 	   
 	   }
 	   
