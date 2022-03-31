@@ -1,5 +1,18 @@
 package Vehicle;
 
+/*
+
+Program: Minivan.java
+
+Purpose: For holding and returning the Minivan.
+
+Author: Luke Van Hardeveld 
+School: CHHS
+Course: Computer Science 30
+ 
+
+*/
+
 public class Minivan extends Vehicle
 {
 	
@@ -37,3 +50,9 @@ public class Minivan extends Vehicle
 	   }
 	
 }
+
+/* Screen Dump
+
+
+
+ */

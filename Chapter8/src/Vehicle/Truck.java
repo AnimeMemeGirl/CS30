@@ -1,5 +1,18 @@
 package Vehicle;
 
+/*
+
+Program: Truck.java
+
+Purpose: For holding and returning the Truck class.
+
+Author: Luke Van Hardeveld 
+School: CHHS
+Course: Computer Science 30
+ 
+
+*/
+
 public class Truck extends Vehicle
 {
 
@@ -38,3 +51,9 @@ public class Truck extends Vehicle
 	   }
 	   
 }
+
+/* Screen Dump
+
+
+
+ */

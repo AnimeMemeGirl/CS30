@@ -1,5 +1,18 @@
 package Vehicle;
 
+/*
+
+Program: Dealership.java
+
+Purpose: For testing the vehicle classes.
+
+Author: Luke Van Hardeveld 
+School: CHHS
+Course: Computer Science 30
+ 
+
+*/
+
 import java.util.Scanner;
 
 public class Dealership 
@@ -50,3 +63,9 @@ public class Dealership
 	}
 	
 }
+
+/* Screen Dump
+
+
+
+ */
