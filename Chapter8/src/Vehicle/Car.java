@@ -10,7 +10,7 @@ public class Car extends Vehicle
    public Car(String c, String Fe, double FeI, String Cc, int CcI, String d, int Drs)
    {
 	   
-    super(FeI, CcI);
+    super(FeI, Cc, CcI);
     Doors = Drs;
     DoorsS = d;
     Car = c;
@@ -20,6 +20,21 @@ public class Car extends Vehicle
    public double getDoors()
    {
 	   return Doors;
+   }
+   
+   public String getDoorsS()
+   {
+	   return DoorsS;
+   }
+   
+   public String getCar()
+   {
+	   return Car;
+   }
+   
+   public String toString()
+   {
+	   return "Car type: Sedan" + " Fuel economy: " + 8.9 + " Carrying Capacity: " + 5 + " Doors: " + 4;
    }
    
 }

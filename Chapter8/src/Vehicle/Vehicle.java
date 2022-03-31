@@ -18,11 +18,13 @@ public abstract class Vehicle
 
 	private double Feconomy;
 	private double carryCapacity;
+	private String carryCapacityS;
 	
-	public Vehicle(double FeI, double CcI)
+	public Vehicle(double FeI, String Cc, double CcI)
 	{
 		
 		Feconomy = FeI;
+		carryCapacityS = Cc;
 		carryCapacity = CcI;
 		
 	}
