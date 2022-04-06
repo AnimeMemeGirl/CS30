@@ -1,0 +1,32 @@
+Chapter 8: CRT
+
+Q1: Explain the difference between a has-a and is-a relationship among classes.
+ A has-a relationship is a class that contains a class member's variables, while a is-a relationship is one that is derived from an existing class.
+
+Q2: If a base class has a public method go() and a derived class has a public method stop(), which methods will be available to an object of  the derived class.
+ Both classes would be available, as the object of the derived class is derived from the base class.
+
+Q3: Compare and contrast implementing an abstract method to overriding a method.
+An abstract method is a method that has been declared, but not implemented. Overriding a method is a subclass overriding a superclass.
+
+Q4: Compare and contrast an abstract class to an interface.
+An abstract class containing one or more abstract methods must be declared abstract. An interface with abstract methods, but cannot be inherited, but can be implemented by any number of classes. 
+
+Q6: Use the following classes to answer the questions below:
+What type of method is doThat() in Wo?
+Assigns an int
+What is Wo?
+It is an interface
+Why is DoThat() implemented in Roo?
+It tells the method to return an int.
+List the methods available to a Roo object.
+doThis()
+doNow()
+How does the implementation of doThis() in Roo affect the implementation of doThis() in Bo?
+It can confuse the code, and mistake one of the other methods.
+What action does the statement super(1) in Roo perform?
+Calls on the base class.
+Can the doThis() method in Bo be called from a Roo object? If so, how?
+No, because it does not call on the Roo object.
+Can a method in Roo call the doThis() method in Bo? If so, how?
+Yes, because it calls on Bo.
