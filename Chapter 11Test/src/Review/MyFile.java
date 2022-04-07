@@ -1,5 +1,18 @@
 package Review;
 
+/*
+
+Program: Myfile.java
+
+Purpose: Create a MyFile application that prompts the user for the name of a file and then displays a message indicates whether the files exists or not.
+
+Author: Luke Van Hardeveld 
+School: CHHS
+Course: Computer Science 30
+ 
+
+*/
+
 import java.io.*;
 import java.util.Scanner;
 
@@ -11,11 +24,11 @@ public class MyFile
 	
 	Scanner input = new Scanner(System.in);
 	
-	//System.out.println("Please Enter the name of a file: ");
+	System.out.println("Please Enter the name of a file: ");
 	
-	//String fileName = input.next();
+	String fileName = input.next();
 		
-		   File textFile = new File("C:\\Users\\74013002\\git\\CS30\\Chapter 11Test\\src\\Review\\Myfiles.txt");
+		   File textFile = new File(fileName);
 		
 		   if(textFile.exists())
 		   {
@@ -30,3 +43,10 @@ public class MyFile
 	}
 	
 }
+
+/*
+screen dump
+
+
+
+ */
