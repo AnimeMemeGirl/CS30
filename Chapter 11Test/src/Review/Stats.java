@@ -15,7 +15,7 @@ public class Stats
 		double scoreValue = 0;
 		double lowScore = 100;
 		double highScore = 0;
-		double AvgScore;
+		double AvgScore = 0;
 		double totalScore = 0;
 		int numScores = 0;
 		
@@ -30,17 +30,24 @@ public class Stats
 				Score = readFile.readLine();
 				System.out.println(StuName + " " + Score);
 				numScores += 1;
+				scoreValue = Double.parseDouble(Score);
+				totalScore += scoreValue;
 				
 				if(scoreValue < lowScore)
 				{
 					lowScore = scoreValue;
 				}
-				else if(scoreValue > highScore)
+				if(scoreValue > highScore)
 				{
 					highScore = scoreValue;
 				}
 				
 			}//while loop
+			
+			AvgScore = totalScore / numScores;
+			System.out.println("Lowest Score: " + lowScore);
+		System.out.println("Highest Score: " + highScore);
+		System.out.println("Average Score: " + AvgScore);
 			readFile.close();
 			in.close();
 		}catch(FileNotFoundException e)
@@ -53,6 +60,8 @@ public class Stats
 			System.out.println("File does not exist!");
 			System.err.println("IOException: "+ e.getMessage());
 		}
+		
+		
 		
 	}
 	
