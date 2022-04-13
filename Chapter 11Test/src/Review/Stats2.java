@@ -1,6 +1,7 @@
 package Review;
 
 import java.io.*;
+import java.text.NumberFormat;
 import java.util.Scanner;
 
 public class Stats2 
@@ -11,8 +12,11 @@ public class Stats2
 		
 		File dataFile; 
 		FileWriter out;
+		FileReader in;
 		BufferedWriter writeFile;
+		BufferedReader readFile;
 		Scanner input = new Scanner(System.in);
+		NumberFormat num = NumberFormat.getPercentInstance();
 		String StuName;
 		String Score;
 		String fileName;
@@ -52,27 +56,55 @@ public class Stats2
 				writeFile.newLine();
 				
 			}
-			
-
-				numScores += 1;
-				totalScore += scoreValue;
-				
-				if(scoreValue < lowScore)
-				{
-					lowScore = scoreValue;
-				}
-				if(scoreValue > highScore)
-				{
-					highScore = scoreValue;
-				}
-			
 			writeFile.close();
 			out.close();
-			AvgScore = totalScore / numScores;
 			System.out.println("Data Written To File.");
-			System.out.println("Lowest Score: " + lowScore);
-		System.out.println("Highest Score: " + highScore);
-		System.out.println("Average Score: " + AvgScore);
+		
+		}catch (IOException e)
+		{
+			System.out.println("Problem Writing To File.");
+			System.err.println("IOException: " + e.getMessage());
+		}
+		
+		
+		
+			
+			
+			//read file
+			try
+			{
+				dataFile = new File(fileName);
+				in = new FileReader(dataFile);
+			    readFile = new BufferedReader(in);
+				
+
+			    while((StuName = readFile.readLine()) != null)
+			    	{
+			    	
+					Score = readFile.readLine();
+					System.out.println(StuName + " " + Score);
+					numScores += 1;
+					scoreValue = Double.parseDouble(Score);
+					totalScore += scoreValue;
+			    	
+				   numScores += 1;
+				   totalScore += scoreValue;
+				
+				   if(scoreValue < lowScore)
+				     {
+					     lowScore = scoreValue;
+				     }
+				   if(scoreValue > highScore)
+				     {
+					     highScore = scoreValue;
+				     }
+			    	}
+		
+			AvgScore = totalScore / numScores;
+			
+			System.out.println("Lowest Score: " + num.format(lowScore));
+		System.out.println("Highest Score: " + num.format(highScore));
+		System.out.println("Average Score: " + num.format(AvgScore));
 			
 		} catch (IOException e)
 		{
@@ -81,5 +113,9 @@ public class Stats2
 		}
 		
 	}
+
+
+		
+	
 	
 }
