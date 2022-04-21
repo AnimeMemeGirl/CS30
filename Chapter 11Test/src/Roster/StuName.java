@@ -1,10 +1,12 @@
 package Roster;
 
-public abstract class StuName 
+import java.io.Serializable;
+
+public class StuName implements Serializable 
 {
 
-	static String firstName;
-	static String lastName;
+	private String firstName;
+	private String lastName;
 	
 	public StuName(String fn, String ln)
 	{
@@ -13,19 +15,11 @@ public abstract class StuName
 		
 	}
 	
-	public String getFirstName()
-	{
-		return firstName;
-	}
 	
-	public String getlastName()
-	{
-		return lastName;
-	}
 	
 	public String toString()
 	{
-		return("firstName" +
-	           "lastName");
+		return(firstName +
+	           lastName);
 	}
 }
