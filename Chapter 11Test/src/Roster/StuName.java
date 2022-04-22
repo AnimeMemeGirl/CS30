@@ -19,7 +19,6 @@ public class StuName implements Serializable
 	
 	public String toString()
 	{
-		return(firstName +
-	           lastName);
+		return(firstName + " " + lastName);
 	}
 }
