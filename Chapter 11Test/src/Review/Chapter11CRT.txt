@@ -1,0 +1,29 @@
+Chapter 11: CRT
+
+Question 1: Can data in memory be called a file? Explain.
+ Yes, because it is a form of medium that can be used to store data.
+
+Question 2: Write the import statement required to access the File Class in an application.
+import.java.io*;
+
+Question 3: Identify the error in the following statement: File textFile = new File(“c:\inventory.txt”):
+The error in the file in the beginning of the statement.
+
+Question 4:
+Which statement is used to write an exception handler?
+Catch
+
+ Write an exception handler to handle an IOException if a specified file name cannot be used to create a file. The exception handler should display appropriate messages to the user.
+catch (IOException e)
+		{
+			System.out.println("Problem Creating File.");
+			System.err.println("IOException: " + e.getMessage());
+		}
+
+
+Question 5:
+What is the name of the stream for displaying error messages.
+An exception handler
+
+Where are these messages displayed.
+When an error occurs in the code.
