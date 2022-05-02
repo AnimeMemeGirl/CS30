@@ -1,3 +1,16 @@
+/*
+
+Program: BlinkLEDPr2.java
+
+Purpose:
+
+Author: Luke Van Hardeveld 
+School: CHHS
+Course: Computer Science 30
+ 
+
+*/
+
 package gettingStarted;
 
 //Add Phidgets Library 
@@ -32,3 +45,8 @@ public static void main(String[] args) throws Exception{
 }
 	
 }
+/* Screen Dump
+
+
+
+ */
