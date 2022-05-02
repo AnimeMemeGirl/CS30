@@ -1,3 +1,16 @@
+/*
+
+Program: BlinkLEDPr3.java
+
+Purpose:
+
+Author: Luke Van Hardeveld 
+School: CHHS
+Course: Computer Science 30
+ 
+
+*/
+
 package gettingStarted;
 
 //Add Phidgets Library 
