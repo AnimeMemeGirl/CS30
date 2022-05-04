@@ -1,6 +1,6 @@
 /*
 
-Program: BlinkLEDPr1.java
+Program: ReadButtonPr2.java
 
 Purpose:
 
@@ -11,38 +11,40 @@ Course: Computer Science 30
 
 */
 
-package gettingStarted;
+
+
 
 //Add Phidgets Library 
 import com.phidget22.*;
-import gettingStarted.DigitalOutput;
 
-public class BlinkLEDPr1 
+public class ReadButtonPr2 
 {
+	
     //Handle Exceptions 
     public static void main(String[] args) throws Exception
     {
-
+        
         //Create 
-    	 DigitalOutput redLED = new DigitalOutput();
+        DigitalInput redButton = new DigitalInput();
 
         //Address 
-    	 redLED.setHubPort(1);
-	     redLED.setIsHubPortDevice(true);
+        redButton.setHubPort(0);
+        redButton.setIsHubPortDevice(true);
 
         //Open 
-        redLED.open(1000);
+        redButton.open(1000);
 
         //Use your Phidgets 
         while(true)
         {
-            redLED.setState(true);
-            Thread.sleep(1000);
-            redLED.setState(false);
-            Thread.sleep(1000);
+            System.out.println("Button State: " + redButton.getState());
+            Thread.sleep(150);
         }
+
     }
+
 }
+
 /* Screen Dump
 
 

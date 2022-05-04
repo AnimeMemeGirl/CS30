@@ -1,24 +1,9 @@
-/*
 
-Program: BlinkLEDPr1.java
-
-Purpose:
-
-Author: Luke Van Hardeveld 
-School: CHHS
-Course: Computer Science 30
- 
-
-*/
-
-package gettingStarted;
-
-//Add Phidgets Library 
 import com.phidget22.*;
-import gettingStarted.DigitalOutput;
 
-public class BlinkLEDPr1 
+public class BlinkLEDPr 
 {
+
     //Handle Exceptions 
     public static void main(String[] args) throws Exception
     {
@@ -42,9 +27,5 @@ public class BlinkLEDPr1
             Thread.sleep(1000);
         }
     }
+	
 }
-/* Screen Dump
-
-
-
- */
