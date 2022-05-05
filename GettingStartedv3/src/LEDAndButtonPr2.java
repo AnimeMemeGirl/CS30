@@ -1,6 +1,6 @@
 /*
 
-Program: ReadButtonPr1.java
+Program: ReadButtonPr2.java
 
 Purpose:
 
@@ -13,12 +13,14 @@ Course: Computer Science 30
 
 
 
+
 //Add Phidgets Library 
 import com.phidget22.*;
 
-public class ReadButtonPr1 
+public class LEDAndButtonPr2 
 {
-    //Handle Exceptions 
+	
+	   //Handle Exceptions 
     public static void main(String[] args) throws Exception
     {
 
@@ -50,23 +52,26 @@ public class ReadButtonPr1
 
             if( redButton.getState())
             {
-                redLED.setState(true);
-            } else 
-            {
                 redLED.setState(false);
+            } 
+            else 
+            {
+                redLED.setState(true);
             }
 
             if(greenButton.getState())
             {
-                greenLED.setState(true);
-            } else 
-            {
                 greenLED.setState(false);
+            } 
+            else 
+            {
+                greenLED.setState(true);
             }
 
             Thread.sleep(150);
         }
     }
+
 }
 
 /* Screen Dump
