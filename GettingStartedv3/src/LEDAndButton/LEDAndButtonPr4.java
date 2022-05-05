@@ -1,26 +1,11 @@
-/*
+package LEDAndButton;
+import com.phidget22.DigitalInput;
+import com.phidget22.DigitalOutput;
 
-Program: ReadButtonPr2.java
-
-Purpose:
-
-Author: Luke Van Hardeveld 
-School: CHHS
-Course: Computer Science 30
- 
-
-*/
-
-
-
-
-//Add Phidgets Library 
-import com.phidget22.*;
-
-public class LEDAndButtonPr2 
+public class LEDAndButtonPr4 
 {
-	
-	   //Handle Exceptions 
+
+    //Handle Exceptions 
     public static void main(String[] args) throws Exception
     {
 
@@ -52,30 +37,24 @@ public class LEDAndButtonPr2
 
             if( redButton.getState())
             {
-                redLED.setState(false);
+                redLED.setState(true);
             } 
             else 
             {
-                redLED.setState(true);
+                redLED.setState(false);
             }
 
             if(greenButton.getState())
             {
-                greenLED.setState(false);
+                greenLED.setState(true);
             } 
             else 
             {
-                greenLED.setState(true);
+                greenLED.setState(false);
             }
 
             Thread.sleep(150);
         }
     }
-
+	
 }
-
-/* Screen Dump
-
-
-
- */
