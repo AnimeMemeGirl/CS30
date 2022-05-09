@@ -11,7 +11,7 @@ public class ReadButtonPr4
         
         //Create 
         DigitalInput redButton = new DigitalInput();
-        boolean state;
+        boolean state = false;
 
         //Address 
         redButton.setHubPort(0);
@@ -23,16 +23,16 @@ public class ReadButtonPr4
         //Use your Phidgets 
         while(true)
         {
-            if(state = true)
+            if(!state && redButton.getState())
             {
 	             System.out.println("button State: " + redButton.getState());
             }
-            else if(state = false)
+            else if(state && redButton.getState())
             {
         	     System.out.println("button State: " + redButton.getState());
         	     
             }
-          Thread.sleep(150);
+            Thread.sleep(150);
         }
     }
 	
