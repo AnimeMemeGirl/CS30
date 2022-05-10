@@ -29,10 +29,12 @@ public class ReadButtonPr4
             }
             else if(state && redButton.getState())
             {
-        	     System.out.println("button State: " + redButton.getState());
-        	     
+        	     System.out.println("button State: " + redButton.getState()); 
             }
+            state = redButton.getState();
             Thread.sleep(150);
+            
+
         }
     }
 	
