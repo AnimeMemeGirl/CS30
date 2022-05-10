@@ -1,4 +1,6 @@
 package LEDAndButton;
+import java.util.Scanner;
+
 import com.phidget22.DigitalInput;
 import com.phidget22.DigitalOutput;
 
@@ -14,6 +16,10 @@ public class LEDAndButtonPr4
         DigitalOutput redLED = new DigitalOutput();
         DigitalInput greenButton = new DigitalInput();
         DigitalOutput greenLED = new DigitalOutput();
+        Scanner input = new Scanner(System.in);
+        int numValue = 0;
+        int sumOfvalues = 0;
+        int newValue = 0;
 
         //Address 
         redButton.setHubPort(0);
@@ -53,8 +59,16 @@ public class LEDAndButtonPr4
                 greenLED.setState(false);
             }
 
+
+         numValue += 1;
+         sumOfvalues += newValue;
+         newValue = input.nextInt();
+         System.out.println(newValue);
+         
             Thread.sleep(150);
         }
+        
+
     }
 	
 }
