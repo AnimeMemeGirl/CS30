@@ -16,13 +16,13 @@ public class ReadTemperaturePr2
         
         double F;
         double C = 0;
-        F = (C * 1.8) + 32;
+        F = (temperatureSensor.getTemperature() * 1.8) + 32;
         
 
         //Use your Phidgets 
         while (true) 
         {
-			System.out.println("Temperature: " + temperatureSensor.getTemperature() + " °F" );
+			System.out.println("Temperature: " + F + " °F" );
             Thread.sleep(150);
         }
     }

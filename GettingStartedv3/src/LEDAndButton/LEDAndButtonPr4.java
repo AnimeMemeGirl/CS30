@@ -59,7 +59,7 @@ public class LEDAndButtonPr4
                 greenLED.setState(false);
             }
 
-
+            
          numValue += 1;
          sumOfvalues += newValue;
          newValue = input.nextInt();
