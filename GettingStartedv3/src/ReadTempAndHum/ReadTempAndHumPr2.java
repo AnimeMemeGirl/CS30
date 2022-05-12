@@ -16,17 +16,26 @@ public class ReadTempAndHumPr2
 	        TemperatureSensor temperatureSensor = new TemperatureSensor();
 	        
 	        //Address 
-	        //humiditySensor.setHubPort(3);
-	        //humiditySensor.setIsHubPortDevice(true);
+	        humiditySensor.setHubPort(3);
+	        humiditySensor.setIsHubPortDevice(true);
 
 	        //Open 
 	        humiditySensor.open(1000);
 	        temperatureSensor.open(1000);
 
 	        //Use your Phidgets 
-	        while(true){
-	            System.out.println("Humidity: " + humiditySensor.getHumidity() +" %RH, Temperature: " + temperatureSensor.getTemperature() + " °C" );
+	        while(true)
+	        {
+	        	if(humiditySensor.getHumidity() <= 30)
+	        	{
+	            System.out.println("Humidity: " + humiditySensor.getHumidity() +" %RH");
 	            Thread.sleep(150);
+	        	}
+	        	else
+	        	{
+	        		System.out.println("Humidity Is Too Low");
+	        	}
+	        	System.out.println("Temperature: " + temperatureSensor.getTemperature() + " °C");
 	        }
 	    }
 	}

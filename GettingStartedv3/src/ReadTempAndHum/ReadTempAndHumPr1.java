@@ -20,7 +20,8 @@ public class ReadTempAndHumPr1
 	        temperatureSensor.open(1000);
 
 	        //Use your Phidgets 
-	        while(true){
+	        while(true)
+	        {
 	            System.out.println("Humidity: " + humiditySensor.getHumidity() +" %RH, Temperature: " + temperatureSensor.getTemperature() + " °C" );
 	            Thread.sleep(150);
 	        }
