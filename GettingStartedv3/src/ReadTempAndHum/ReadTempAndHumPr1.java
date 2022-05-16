@@ -8,7 +8,7 @@ public class ReadTempAndHumPr1
 
 	public class GettingStarted 
 	{
-	    public void main(String[] args) throws Exception
+		public void main(String[] args) throws Exception
 	    {
 
 	        //Create 
@@ -22,7 +22,8 @@ public class ReadTempAndHumPr1
 	        //Use your Phidgets 
 	        while(true)
 	        {
-	            System.out.println("Humidity: " + humiditySensor.getHumidity() +" %RH, Temperature: " + temperatureSensor.getTemperature() + " °C" );
+	            double tempF = (temperatureSensor.getTemperature() * 1.8) + 32;
+	        	System.out.println("Humidity: " + humiditySensor.getHumidity() + " " + "Temperature: " + tempF + " °F" );
 	            Thread.sleep(150);
 	        }
 	    }

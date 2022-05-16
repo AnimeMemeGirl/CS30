@@ -19,7 +19,7 @@ public class readTempAndHumPr3
         //Use your Phidgets 
         while(true)
         {
-        	if(temperatureSensor.getTemperature() <= 21)
+        	if(temperatureSensor.getTemperature() >= 21)
         	{
             System.out.println("Temperature: " + temperatureSensor.getTemperature() + " °C" );
             Thread.sleep(150);

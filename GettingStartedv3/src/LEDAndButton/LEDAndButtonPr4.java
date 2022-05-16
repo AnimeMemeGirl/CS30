@@ -36,6 +36,7 @@ public class LEDAndButtonPr4
         redLED.open(1000);
         greenButton.open(1000);
         greenLED.open(1000);
+        
 
         //Use your Phidgets 
         while(true)
@@ -44,6 +45,7 @@ public class LEDAndButtonPr4
             if( redButton.getState())
             {
                 redLED.setState(true);
+                numValue++;
             } 
             else 
             {
@@ -53,13 +55,17 @@ public class LEDAndButtonPr4
             if(greenButton.getState())
             {
                 greenLED.setState(true);
+                numValue++;
             } 
             else 
             {
                 greenLED.setState(false);
             }
 
+            System.out.println("button Count: " + numValue);
             Thread.sleep(150);
+            
+            
               
         }
          

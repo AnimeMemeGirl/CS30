@@ -26,7 +26,7 @@ public class ReadTempAndHumPr2
 	        //Use your Phidgets 
 	        while(true)
 	        {
-	        	if(humiditySensor.getHumidity() <= 30)
+	        	if(humiditySensor.getHumidity() >= 30)
 	        	{
 	            System.out.println("Humidity: " + humiditySensor.getHumidity() +" %RH");
 	            Thread.sleep(150);
