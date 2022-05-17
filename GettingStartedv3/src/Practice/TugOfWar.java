@@ -18,7 +18,8 @@ public class TugOfWar
         redButton.setIsHubPortDevice(true);
         greenButton.setHubPort(5);
         greenButton.setIsHubPortDevice(true);
-        int buttonPress = 0;
+        int gPress = 0;
+        int rPress = 0;
 
         //Open 
         redButton.open(1000);
@@ -27,6 +28,15 @@ public class TugOfWar
         //Use your Phidgets 
         while(true)
         {
+        	
+        	if( redButton.getState())
+            {
+                rPress++;
+            }
+        	else if( greenButton.getState())
+            {
+                gPress++;
+            }
         	
         }
     }
