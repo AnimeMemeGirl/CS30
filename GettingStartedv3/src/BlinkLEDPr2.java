@@ -36,11 +36,13 @@ public static void main(String[] args) throws Exception{
     
     
     //Use your Phidgets
-    while(count < 3)
-        {   
-           redLED.setState(true);
-         Thread.sleep(1000);
-        } 
+    while(true)
+    {
+        redLED.setState(true);
+        Thread.sleep(2000);
+        redLED.setState(false);
+        Thread.sleep(2000);
+    }
     
 }
 	

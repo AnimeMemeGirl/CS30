@@ -20,7 +20,7 @@ public class HotOrCold
         //Use your Phidgets 
         while (true) 
         {
-        	if(temperatureSensor.getTemperature() <= 20)
+        	if(temperatureSensor.getTemperature() >= 20 && temperatureSensor.getTemperature() <= 24)
         	{
         		greenLED.setState(true);
         	}

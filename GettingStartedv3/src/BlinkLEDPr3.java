@@ -23,19 +23,30 @@ public class BlinkLEDPr3
  public static void main(String[] args) throws Exception{
 
      //Create 
-     DigitalOutput greenLED = new DigitalOutput();
+     DigitalOutput redLED = new DigitalOutput();
 
      //Address 
-     greenLED.setHubPort(4);
-     greenLED.setIsHubPortDevice(true);
+     redLED.setHubPort(1);
+     redLED.setIsHubPortDevice(true);
 
      //Open 
-     greenLED.open(1000);
+     redLED.open(1000);
 
      //Use your Phidgets 
-     greenLED.setState(true);
-     Thread.sleep(1000);
-     greenLED.setState(false);
+     redLED.setState(false);
+ 	Thread.sleep(500);
+ 	redLED.setState(true);
+ 	Thread.sleep(500);
+ 	redLED.setState(false);
+ 	Thread.sleep(500);
+ 	redLED.setState(true);
+ 	Thread.sleep(500);
+ 	redLED.setState(false);
+ 	Thread.sleep(500);
+ 	redLED.setState(true);
+ 	Thread.sleep(500);
+ 	redLED.setState(false);
+ 	Thread.sleep(500);
 
  }
 
