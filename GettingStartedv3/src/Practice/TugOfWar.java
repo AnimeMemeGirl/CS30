@@ -47,11 +47,12 @@ public class TugOfWar
             {
         		redLED.setState(true);
                 rPress++;
-               // System.out.println("Number of presses of red button is: " + rPress);
+                System.out.println("Number of presses of red button is: " + rPress);
+                Thread.sleep(150);
                 
                 
             }
-        	else if(rState && !redButton.getState())
+        	else
             {
                 redLED.setState(false);
             }
@@ -60,28 +61,53 @@ public class TugOfWar
             {
         		greenLED.setState(true);
                 gPress++;
+                System.out.println("Number of presses of green button is: " + gPress);
+                Thread.sleep(150);
             }
-        	else if(gState && !greenButton.getState())
+        	else
         	{
         		greenLED.setState(false);
         	}
         	
        } 	
         	//Flash lights
+        
+       if(rPress >= 10)
+       {
+    	   System.out.println("Red Wins");
         	redLED.setState(false);
         	Thread.sleep(500);
         	redLED.setState(true);
         	Thread.sleep(500);
         	redLED.setState(false);
         	Thread.sleep(500);
-        	
+        	redLED.setState(true);
+        	Thread.sleep(500);
+        	redLED.setState(false);
+        	Thread.sleep(500);
+        	redLED.setState(true);
+        	Thread.sleep(500);
+        	redLED.setState(false);
+        	Thread.sleep(500);
+       }
+        if(gPress >= 10)
+        {
+        	System.out.println("Green Wins");
         	greenLED.setState(false);
         	Thread.sleep(500);
         	greenLED.setState(true);
         	Thread.sleep(500);
         	greenLED.setState(false);
         	Thread.sleep(500);
-        	
+        	greenLED.setState(true);
+        	Thread.sleep(500);
+        	greenLED.setState(false);
+        	Thread.sleep(500);
+        	greenLED.setState(true);
+        	Thread.sleep(500);
+        	greenLED.setState(false);
+        	Thread.sleep(500);
+        }	
         	
         	
         	
