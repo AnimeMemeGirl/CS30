@@ -1,5 +1,7 @@
 package Practice;
 
+import java.util.Scanner;
+
 import com.phidget22.DigitalOutput;
 import com.phidget22.TemperatureSensor;
 
@@ -25,11 +27,19 @@ public class Thermostat
     greenLED.setIsHubPortDevice(true);
     greenButton.setHubPort(5);
     greenButton.setIsHubPortDevice(true);
+    Scanner input = new Scanner(System.in);
     int gPress = 0;
     int rPress = 0;
     int setTemp = 21;
     boolean rState = false;
     boolean gState = false; 
+    
+  //Open 
+    temperatureSensor.open(1000);
+    redLED.open(1000);
+    greenLED.open(1000);
+    redButton.open(1000);
+    greenButton.open(1000);
     
     while(true)
     {
@@ -40,10 +50,15 @@ public class Thermostat
     	}
     	else if(!rState && greenButton.getState())
     	{
-    		rPress++;
+    		rPress--;
     	}
+    	
+    	//setTemp += gPress;
+    	//setTemp = rPress;
+    	
+    	System.out.println("Set Temperature: " + gPress);
     	System.out.println("Temperature: " + temperatureSensor.getTemperature() + " °C" );
-        Thread.sleep(10000);
+        Thread.sleep(500);
     	
     }
     
